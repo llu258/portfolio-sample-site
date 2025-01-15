@@ -105,16 +105,21 @@ nav li:hover {
 }
 
 .about{
-    margin-top: 100px;
-    padding: 100px 100px;
+    margin-top: 5%;
     width: 100%;
     border-top: 1px solid rgb(0, 0, 0);
     display: flex;
 }
 
 .about-me {
-    width: 50%;
+    width: 60%;
     display: inline-block;
+}
+
+.about-me h1,
+.about-me p{
+    padding-left: 100px;
+    padding-top: 10px;
 }
 
 .about-me p{
@@ -127,6 +132,7 @@ nav li:hover {
     display: inline-block;
     border-radius: 50px solid black;
     padding-right: 100px;
+    padding-top: 10px;
     
 }
 
@@ -138,30 +144,30 @@ nav li:hover {
 }
 
 .projects{
-    padding: 100px 100px;
     border-top: 1px solid rgb(0, 0, 0);
     width: 100%;
     height: auto;
+    padding-left: 100px;
 }
 
 .projects h1{
     position: relative;
-    width: 30%;
+    width: auto;
     display: inline-block;
+
 }
 
 .project-type {
     display: inline-flex;
-    
+    position: relative;
 }
 
 .project-type li{  
     display: inline-block;
     border: 1px solid;
-    padding: 5px 15px;
+    padding: 3px 15px;
     border-radius: 15px;
-    margin: 5px;
-    
+    margin: 6px 5px;    
 }
 
 .project-type li:hover {
