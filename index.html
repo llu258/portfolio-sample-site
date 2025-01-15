@@ -11,13 +11,14 @@
   <body>
 
     <nav>
-        <h1>JESUS LUIGI SISON</h1>
-        <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Experience</li>
-            <li>Contact</li>
+        <h1 class="nav-title">JESUS LUIGI SISON</h1>
+        <ul class="nav-content">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experiences">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+      
 
         <!--ADD TOGGLE FOR RESPONSIVENESS-->
     </nav>
@@ -29,8 +30,8 @@
         <h2>Jesus Luigi Sison</h2>
         <span class="head-bottom"></span>
         <h3 class="typing">Web Developer | QA</h3>
-        <p>Lorem Ipsum is simply dummy text of the  and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text.</p>
+        <p>A Software QA engineer and aspiring developer who thrives
+          learning and creating through technology.</p>
         
         <div class="banner-btn">
 
@@ -57,9 +58,8 @@
 
     <div class="about">
       <div class="about-me">
-        <h1>About Me..</h1>
-        <p>I'm Jesus Luigi, a passionate software developer and QA engineer who loves 
-        learning and creating through technology. With experience in firmware development, web design, and quality 
+        <h1 id="about">About Me..</h1>
+        <p>I'm Luigi, a graduate of BS Computer Engineering at Angeles University Foundation With experience in firmware development, web design, and quality 
         assurance, I thrive on building innovative solutions using tools like HTML, CSS, JavaScript, and Laravel. 
         Let’s create something extraordinary together!</p>
 
@@ -89,7 +89,7 @@
     </div>
 
     <div class="projects">
-      <h1>Projects</h1>
+      <h1 id="projects">Projects</h1>
       <ul class="project-type">
         <li>Web Development</li>
         <li>Software Development</li>
@@ -100,7 +100,7 @@
         <div class="card-wrapper">
           <ul class="card-list swiper-wrapper">
             <li class="card-item swiper-slide">
-              <a href="" class="card-link">
+              <a href="#" class="card-link">
                 <img src="./assets/pic/proj/barecodescanner.png" alt="barcode scanner">
                 <h2 class="card-title">
                   Timekeeper: Barcode scanner project for employee and student entry/exit timekeeping
@@ -110,7 +110,7 @@
             </li>
 
             <li class="card-item swiper-slide">
-              <a href="" class="card-link">
+              <a href="#" class="card-link">
                 <img src="./assets/pic/proj/myelemes.png" alt="myelemes">
                 <h2 class="card-title">
                   MyElemes: Learning Management System
@@ -120,7 +120,7 @@
             </li>
 
             <li class="card-item swiper-slide">
-              <a href="" class="card-link">
+              <a href="#" class="card-link">
                 <img src="./assets/pic/proj/carrentalwebsite.png" alt="carrentalwebsite">
                 <h2 class="card-title">
                   Drivvu: Car Rental Website
@@ -130,7 +130,7 @@
             </li>
 
             <li class="card-item swiper-slide">
-              <a href="" class="card-link">
+              <a href="#" class="card-link">
                 <img src="./assets/pic/proj/warehousemanagement.png" alt="warehousemgmttestcases">
                 <h2 class="card-title">
                   Warehouse Management System Test Cases
@@ -140,13 +140,16 @@
             </li>
 
             <li class="card-item swiper-slide">
-              <a href="" class="card-link">
-                <img src="./assets/pic/proj/golfscoringsystem.jpg" alt="golfscoringsystemtestplan">
+              <a href="#" class="card-link">
+                <img src="./assets/pic/proj/golfscoringsystem.jpg" alt="golfscoringsystem">
                 <h2 class="card-title">
-                  Golf Scoring System Sample Test Plan
+                  GolfServ: Golf Scoring Test Plan
+                </h2>
+                <!-- This is the link: file:///C:/Users/balut/OneDrive/Desktop/SisonJLM-TestPlanforGolfServ.pdf -->
                 <button class="card-button"><img src="./assets/icons/forwardarrow.svg" alt="forward-arrow"></button>
               </a>
             </li>
+
           </ul>
 
           <div class="swiper-pagination"></div>
@@ -158,12 +161,59 @@
     </div>
 
     <div class="experience">
-      <h1>Experience</h1>
+      <h1 id="experiences">Experience</h1>
+
+      <div class="widget">
+        <div class="tabs">
+
+          <input type="radio" id="experience" name="tabs" checked />
+          <label for="experience">Professional Experience</label>
+      
+          <input type="radio" id="certificate" name="tabs" />
+          <label for="certificate">Certificate</label>
+
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-content-1">
+            <h2>Professional Experience</h2>
+
+              <h3>Software QA Engineer Intern - Elinnov Technologies</h3>  
+              <h4>Aug 2024 - Nov 2024</h4>
+              <ul>
+                <li>Do QA checks from software testing following the methodologies such as manual, regression, functional, end-to-end testing; 
+                  designing and updating test cases. Moreover, conducted thorough research about sustainability and its related data.</li>
+              </ul>
+
+              <h3>Independent Contractor - Appen Ltd.</h3>  
+              <h4>Aug 2023 - Feb 2024</h4>
+              <ul>
+                <li>Do fine-tuning and analyzing large-language models (LLMs) data under coding/programming domain. </li>
+              </ul>
+
+              <h3>Student Intern - Tigernethost OPC</h3>  
+              <h4>March 2022 - May 2022</h4>
+              <ul>
+                <li>Do research and technical documentations for firmware projects and contribute system functionality sketches (Arduino)</li>
+              </ul>
+
+
+          </div>
+          
+          <div class="tab-content-2">
+            <h2>Certificate</h2>
+            <p>[Attach here the pics of course certificates].</p>
+          </div>
+     
+        </div>
     </div>
 
     <div class="contact"></div>
+    <h1 id="contact">Contact</h1>
 
-    <div class="footer"></div>
+    <footer>
+      
+    </footer>
     
   
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
