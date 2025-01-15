@@ -97,6 +97,7 @@ nav li:hover {
     margin-top: 50px;
     padding-top: 50px;
     z-index: 2;
+    display: inline-flex;
     
 }
 
@@ -144,17 +145,16 @@ nav li:hover {
 }
 
 .projects{
+    margin-top: 5%;
     border-top: 1px solid rgb(0, 0, 0);
     width: 100%;
-    height: auto;
-    padding-left: 100px;
 }
 
 .projects h1{
     position: relative;
     width: auto;
     display: inline-block;
-
+    padding-left: 100px;
 }
 
 .project-type {
@@ -176,10 +176,17 @@ nav li:hover {
     background-color: black;
 }
 
-.card-wrapper {
-    display: flex;
-    
+.container {
+    padding: 100px;
 }
+
+.card-wrapper {
+    width: 90%;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
 
 .card-wrapper img{
     width: 100%;
@@ -190,7 +197,7 @@ nav li:hover {
 }
 
 .card-list .card-item .card-link{
-    width: 400px;
+    user-select: none;
     display: block;
     padding: 18px;
     border-radius: 12px;
@@ -199,6 +206,10 @@ nav li:hover {
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     transition: 0.2s ease;
     border: 2px solid transparent;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
 }
 
 .card-list .card-item .card-link:hover {
@@ -228,4 +239,43 @@ nav li:hover {
     background: black;
 }
 
+.card-wrapper
+.swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    opacity: 0.6;
+    background: black;
+}
 
+
+.card-wrapper
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper 
+.swiper-slide-button {
+    color: black;
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 10px 25px;
+
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+.experience {
+    margin-top: 5%;
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+.experience h1 {
+    padding: 50px 100px;
+}
