@@ -1,23 +1,12 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body{
    
-    background-color: rgb(245, 240, 240);
+    --background-color: rgb(245, 240, 240);
     color: black;
     font-family: 'Courier New', Courier, monospace;
-}
-
-nav h1{
-    display: flex;
-}
-
-.nav-content,
-.nav-title {
-    margin: 100px;
-}
-
-nav h1:hover{
-    background-color: rgb(181, 241, 241);
-    color: rgb(22, 73, 116);
-    cursor: pointer;
 }
 
 nav{
@@ -33,6 +22,18 @@ nav{
     justify-content: space-between;
     background-color: transparent;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.nav-content,
+.nav-title {
+    margin: 100px;
+    display: flex;
+}
+
+nav h1:hover{
+    background-color: rgb(181, 241, 241);
+    color: rgb(22, 73, 116);
+    cursor: pointer;
 }
 
 nav li {
@@ -192,9 +193,13 @@ nav li:hover {
 
 .card-wrapper {
     width: 170px 0px;
-    margin: 0 60px 35px;
+    margin: 0 60px 20px;
     padding: 20px 40px;
     overflow: hidden;
+}
+
+.card-wrapper ul{
+    padding-inline-start: 0px;
 }
 
 
@@ -209,7 +214,7 @@ nav li:hover {
 .card-list .card-item .card-link{
     user-select: none;
     display: block;
-    padding: 18px;
+    padding: 20px;
     border-radius: 12px;
     text-decoration: none;
     color: black;
@@ -375,6 +380,48 @@ nav li:hover {
 .contact h1{
     position: relative;
     width: auto;
-    display: inline-block;
     padding-left: 100px;
+}
+
+.input-box {
+    display: flex;
+    padding: 100px;
+}
+
+.input-grp {
+
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 80%;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 5px 0;
+    background-color: var(--background-color);
+    resize: none;
+}
+
+.contact .btn {
+    cursor: pointer;
+}
+
+
+
+.socials {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid black;
+    justify-items: center;
+
+}
+
+.socials a{
+    font-size: 40px;
+    color: black;
+}
+.bx {
+    height: 15px;
 }
