@@ -6,8 +6,12 @@ body{
    
     --background-color: rgb(245, 240, 240);
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+
 
 nav{
     width: 100%;
@@ -21,7 +25,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
 }
 
 .nav-content,
@@ -34,6 +38,7 @@ nav h1:hover{
     background-color: rgb(181, 241, 241);
     color: rgb(22, 73, 116);
     cursor: pointer;
+    font-weight: bolder;
 }
 
 nav li {
@@ -342,7 +347,7 @@ nav li:hover {
     content: "";
     inset: 0 0 -1px;
     z-index: -1;
-    width: calc((100% / var(--tab-count)) - 2px);
+    width: calc((100% / var(--tab-count)) - 2.1px);
     border-radius: 10px 10px 0 0;
     border: 1px solid black;
     border-block-end: none;
@@ -375,6 +380,7 @@ nav li:hover {
     margin-top: 5%;
     border-top: 1px solid rgb(0, 0, 0);
     width: 100%;
+    padding-bottom: 300px;
 }
 
 .contact h1{
@@ -424,4 +430,20 @@ nav li:hover {
 }
 .bx {
     height: 15px;
+}
+
+footer {
+    padding: 20px 200px 35px ;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out children to align them properly */
+    align-items: center; /* Vertically align items */
+}
+
+.copyright,
+.rights {
+    margin: 0; /* Remove default margin of h4 elements */
 }
