@@ -62,6 +62,7 @@ nav li:hover {
 .banner {
     padding: 20px 100px;
     display: flex;
+    margin-bottom: 5%;
 }
 
 .banner-desc {
@@ -101,8 +102,13 @@ nav li:hover {
 .banner-cv img{
     display: inline-block;
     width: 15px;
-    float: left;
     padding-right: 5px;
+}
+
+.banner-socials .bx{
+    height: 15px;
+    text-decoration: none;
+    color: black;
 }
 
 .banner-pic{
@@ -122,7 +128,6 @@ nav li:hover {
 }
 
 .about{
-    margin-top: 5%;
     width: 100%;
     border-top: 1px solid rgb(0, 0, 0);
     display: flex;
@@ -293,7 +298,6 @@ nav li:hover {
 .experience {
     margin-top: 5%;
     border-top: 1px solid rgb(0, 0, 0);
-    width: 100%;
 }
 
 .experience h1 {
@@ -417,9 +421,7 @@ nav li:hover {
 
 
 .socials {
-    display: inline-block;
     width: 50%;
-    border: 1px solid black;
     justify-items: center;
 
 }
@@ -428,8 +430,19 @@ nav li:hover {
     font-size: 40px;
     color: black;
 }
+
+.socials-img img{
+    border-radius: 50%;
+    height: 300px;
+}
+
 .bx {
     height: 15px;
+}
+
+.socials-img img,
+.bx {
+    padding: 10px;
 }
 
 footer {
@@ -438,12 +451,12 @@ footer {
 }
 
 .footer-content {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space out children to align them properly */
-    align-items: center; /* Vertically align items */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .copyright,
 .rights {
-    margin: 0; /* Remove default margin of h4 elements */
+    margin: 0; 
 }
