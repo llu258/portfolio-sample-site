@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>  
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -37,21 +37,15 @@
         <h3 class="typing">Web Developer | QA</h3>
         <p>A Software QA engineer and aspiring developer who thrives
           learning and creating through technology.</p>
+          
         
-        <div class="banner-btn">
-
-          <div class="banner-contact">
-            <button>Contact Me</button>
-          </div>
-          
-          <div class="banner-cv">
-            <button>
-              <a href="./assets/pic/ResumeSisonJLM..pdf" download>
-                <img src="./assets/icons/download.svg" alt="download">Download CV</a>
-            </button>
-          </div>
-          
-        </div>
+        <!-- Attach updated resume below -->
+        <a href="https://drive.google.com/file/d/1VBlaLoldTl0glz6PZkj5c2J-mruO5896/view?usp=sharing" download> 
+          <button class="button" type="button">
+            <span class="material-symbols-outlined">download</span>
+            Download CV 
+          </button>
+        </a>
       </div>
 
       <div class="banner-pic">
@@ -63,7 +57,8 @@
 
     <div class="about">
       <div class="about-me">
-        <h1 id="about">About Me..</h1>
+        <h1 id="about"></h1>
+        <h1 class="about-title" style="border-top: 1px solid rgb(0, 0, 0);">About Me</h1>
         <p>I'm Luigi, a graduate of BS Computer Engineering at Angeles University Foundation With experience in firmware development, web design, and quality 
         assurance, I thrive on building innovative solutions using tools like HTML, CSS, JavaScript, and Laravel. 
         Let’s create something extraordinary together!</p>
@@ -93,8 +88,8 @@
 
     </div>
 
-    <div class="projects">
-      <h1 id="projects">Projects</h1>
+    <div class="projects" id="projects">
+      <h1 class="proj-title" style="border-top: 1px solid rgb(0, 0, 0);">Projects</h1>
       <ul class="project-type">
         <li>Web Development</li>
         <li>Software Development</li>
@@ -171,10 +166,10 @@
       <div class="widget">
         <div class="tabs">
 
-          <input type="radio" id="experience" name="tabs" checked />
+          <input type="radio" id="experience" name="tabs"  />
           <label for="experience">Professional Experience</label>
       
-          <input type="radio" id="certificate" name="tabs" />
+          <input type="radio" id="certificate" name="tabs" checked />
           <label for="certificate">Certificates and Badges</label>
 
         </div>
@@ -209,31 +204,31 @@
             <div class="cert-tile">
               <a href="https://www.credly.com/badges/3c4aa8b3-d5b4-4f29-938f-35b740bcfdb0" class="cert-item">
                 <img src="./assets/pic/cert/awsAcademyCloudFoundation.png" class="cert-image">
-                  <p class="cert-title">AWS Academy Cloud Foundation</p>
+                  <p>AWS Academy Cloud Foundation</p>
               </a>
               <a href="https://www.credly.com/badges/941291c6-0010-4343-b00c-7c9527b6d577" class="cert-item">
                 <img src="./assets/pic/cert/awsAcademyCloudArchitecting.png" class="cert-image">
-                  <p class="cert-title">AWS Academy Cloud Architecting</p>
+                  <p>AWS Academy Cloud Architecting</p>
               </a>
               <a href="#" class="cert-item">
                 <img src="./assets/pic/cert/cProgrammingForEmbeddedApps.png" class="cert-image">
-                  <p class="cert-title">C Programming For Embedded Applications</p>
+                  <p>C Programming For Embedded Applications</p>
               </a>
               <a href="#" class="cert-item">
                 <img src="./assets/pic/cert/introToSoftwareTesting.png" class="cert-image">
-                  <p class="cert-title">Software Testing Introduction</p>
+                  <p>Software Testing Introduction</p>
               </a>
               <a href="#" class="cert-item">
                 <img src="./assets/pic/cert/introSQLDatacamp.png" class="cert-image">
-                  <p class="cert-title">SQL Introductory</p>
+                  <p>SQL Introductory</p>
               </a>
               <a href="#" class="cert-item">
                 <img src="./assets/pic/cert/intermediateSQLDaatacamp.png" class="cert-image">
-                  <p class="cert-title">SQL Intermediate</p>
+                  <p>SQL Intermediate</p>
               </a>
               <a href="#" class="cert-item">
                 <img src="./assets/pic/cert/machineLearning.png" class="cert-image">
-                  <p class="cert-title">Machine Learning</p>
+                  <p>Machine Learning</p>
               </a>
             </div>
           </div>
