@@ -3,7 +3,6 @@
 }
 
 body{
-   
     --background-color: rgb(245, 240, 240);
     color: black;
     font-family: "Hanken Grotesk", serif;
@@ -19,23 +18,48 @@ nav{
     height: 50px;
     position: fixed;
     display: flex;
-    z-index: 99999999999999;
+    z-index: 100;
     top: 0;
     left: 0;
     padding: 5px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: rgba(251, 255, 255, 0.8);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
 }
 
-.nav-title {
-    font-size: 30px;
+nav svg {
+    fill: black;
 }
 
-.nav-content,
+#sidebar-active {
+    display: none;
+}
+
+.open-menu-btn,
+.close-menu-btn {
+    display: none;
+    padding: 0 20px;
+}
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav .home-link {
+    margin-right: auto;
+}
 .nav-title {
-    margin: 100px;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.nav-content {
+    margin-right: 100px;
     display: flex;
 }
 
@@ -56,6 +80,8 @@ nav a{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 
 nav li:hover {
@@ -63,6 +89,45 @@ nav li:hover {
     color: rgb(22, 73, 116);
     cursor: pointer;
     font-weight: 600;
+}
+
+@media(max-width: 1000px){
+    .links-container {
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 500px;
+        background-color: rgba(251, 255, 255, 0.8);
+        box-shadow: -5px 0 5px rgba(0,0,0,0.1);
+        transition: 0.7s ease-out;
+    }    
+
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+
+    .nav-content {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .open-menu-btn,
+    .close-menu-btn {
+        display: block;
+        padding: 20px;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        right: 0;
+        
+    }
+
 }
 
 .banner {
@@ -229,7 +294,7 @@ nav li:hover {
 
 .proj-title {
     width: 175%;
-    z-index: 999989;
+    z-index: 2;
 }
 
 .project-type {
@@ -351,11 +416,17 @@ nav li:hover {
 
 .experience {
     margin-top: 5%;
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid transparent; /* redundant to */
+    
 }
 
+.exp-title {
+    border-top: 1px solid;
+}
 .experience h1 {
     padding: 10px 100px 10px;
+    margin-top: 60px;
+    padding-top: 20px;
 }
 
 .widget{
@@ -470,15 +541,21 @@ nav li:hover {
 
 .contact{
     margin-top: 5%;
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid transparent;
     width: 100%;
     padding-bottom: 300px;
+}
+
+.contact-title{
+    border-top: 1px solid ;
+    margin-top: 60px;
 }
 
 .contact h1{
     position: relative;
     width: auto;
     padding-left: 100px;
+    padding-top: 20px;
 }
 
 .input-box {

@@ -17,13 +17,26 @@
   <body>
 
     <nav>
-        <h1 class="nav-title">JESUS LUIGI SISON</h1>
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="open-menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </label>
+
+      <div class="links-container">
+        <label for="sidebar-active" class="close-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label>
+
+        <a class="home-link" href="#"><h1 class="nav-title">JESUS LUIGI SISON</h1></a>
         <ul class="nav-content">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experiences">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        
+      </div>
+        
       
 
         <!--ADD TOGGLE FOR RESPONSIVENESS-->
@@ -40,7 +53,7 @@
           
         
         <!-- Attach updated resume below -->
-        <a href="https://drive.google.com/file/d/1VBlaLoldTl0glz6PZkj5c2J-mruO5896/view?usp=sharing" download> 
+        <a href="https://drive.usercontent.google.com/u/0/uc?id=1VBlaLoldTl0glz6PZkj5c2J-mruO5896&export=download"> 
           <button class="button" type="button">
             <span class="material-symbols-outlined">download</span>
             Download CV 
@@ -160,8 +173,8 @@
       </div>
     </div>
 
-    <div class="experience">
-      <h1 id="experiences">Experience</h1>
+    <div class="experience" id="experiences">
+      <h1 class="exp-title">Experience</h1>
 
       <div class="widget">
         <div class="tabs">
@@ -237,8 +250,8 @@
       </div>
     </div>
 
-    <div class="contact">
-      <h1 id="contact">Contact</h1>
+    <div class="contact" id="contact">
+      <h1 class="contact-title">Contact</h1>
       <form action="#" class="form">
         <div class="input-box">
           <div class="input-grp">
