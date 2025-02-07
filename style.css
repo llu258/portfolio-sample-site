@@ -130,6 +130,18 @@ nav li:hover {
         
     }
 
+    nav {
+        height: 50px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 480px) {
+    nav {
+        height: 50px;
+        width: 100%;
+    }
 }
 
 .banner {
