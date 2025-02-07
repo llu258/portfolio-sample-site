@@ -54,8 +54,9 @@ nav .home-link {
     margin-right: auto;
 }
 .nav-title {
-    font-size: 25px;
+    font-size: 24px;
     margin-left: 100px;
+    font-weight: 900;
 }
 
 .nav-content {
@@ -72,14 +73,15 @@ nav h1:hover{
 
 nav li {
     display: inline-flex;
-    margin: 0 20px;
+    margin: 0 9px;
     
 }
 
 nav a{
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
@@ -91,23 +93,14 @@ nav li:hover {
     font-weight: 600;
 }
 
-@media(max-width: 1000px){
-    nav{
-        display: flex;
-        
-    }
-
-    .nav-title h1{
-        display: block;
-    }
-    
+@media(max-width: 760px){
     .links-container {
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
         top: 0;
         right: -100%;
-        width: 500px;
+        width: 80%;
         background-color: rgba(251, 255, 255, 0.8);
         box-shadow: -5px 0 5px rgba(0,0,0,0.1);
         transition: 0.7s ease-out;
@@ -131,7 +124,6 @@ nav li:hover {
         display: block;
         padding: 20px;
     }
-    
 
     #sidebar-active:checked ~ .links-container {
         right: 0;
@@ -141,9 +133,11 @@ nav li:hover {
 }
 
 .banner {
+    width: 100%;
     padding: 20px 100px;
     display: flex;
     margin-bottom: 5%;
+    position: relative;
 }
 
 .banner h1{
@@ -236,6 +230,7 @@ nav li:hover {
 
 .banner-pic img{
     width: 100%;
+    display: flex;
 }
 
 .about{
