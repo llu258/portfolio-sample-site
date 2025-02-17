@@ -22,12 +22,9 @@ Check it out here: [My Portfolio Site](https://llu258.github.io)
 - v0.3 - Implement additional code for improved responsiveness. Fixing the experience/certificate appearance for mobile viewing. Also implement authentication for invalid input for contact forms (2/11/25).
 
 ### 🛠️ Planned Improvements 
-- Add banner to the site noting that the site is still under development.
-- Enhanced responsive design for various screen sizes for the project and experience/certificate pages.
+- Addition of back to top feature.
 - Dark mode feature implementation.
 - Optimize performance of the website.  
-- Addition and pop-up page for the brief description of the projects.
-- Authentication of invalid/missing input for the contact form.
 
 Stay tuned for the latest updates!  
 
