@@ -23,7 +23,6 @@ Check it out here: [My Portfolio Site](https://llu258.github.io)
 
 ### 🛠️ Planned Improvements 
 - Addition of back to top feature.
-- Dark mode feature implementation.
 - Optimize performance of the website.  
 
 Stay tuned for the latest updates!  
